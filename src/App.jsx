@@ -2,9 +2,11 @@ import "./App.css";
 import Card from "./Card";
 
 function App() {
+  const handleClick = () => console.log("clicked");
+
   return (
     <div className="app-container">
-      <Card />
+      <Card handleClick={handleClick} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="container">
       <p className="id">ADVICE #117</p>
@@ -16,7 +16,7 @@ export default function Card() {
         alt="Divider Line"
       />
 
-      <button className="new-advice">
+      <button className="new-advice" onClick={props.handleClick}>
         <img src="/images/icon-dice.svg" alt="Dice for new Advice" />
       </button>
     </div>
