@@ -7,12 +7,12 @@ export default function Card(props) {
       <p className="advice">"{props.sageAdvice.advice}"</p>
       <img
         className="divider"
-        src="images/pattern-divider-desktop.svg"
+        src="src/images/pattern-divider-desktop.svg"
         alt="Divider Line"
       />
 
       <button className="new-advice" onClick={props.handleClick}>
-        <img src="/images/icon-dice.svg" alt="Dice for new Advice" />
+        <img src="src/images/icon-dice.svg" alt="Dice for new Advice" />
       </button>
     </div>
   );
